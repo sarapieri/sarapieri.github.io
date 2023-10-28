@@ -142,12 +142,13 @@
                 </p>
               </td>
             </tr>   -->
+
             <tr>
               <td style="padding:20px;width:25%;vertical-align:middle">
                 <div class="one" onmouseover="difsurvey_start()" onmouseout="difsurvey_stop()">
                   <div class="two" id='video_container' style="position: relative;">
                     <video id="fed_video" width=100% height=100% muted>
-                      <source src="images/difsurvey_video.mp4" type="video/mp4">
+                      <source src="images/fed_video.mp4" type="video/mp4">
                       Your browser does not support the video tag.
                     </video>
                     <img id='fed_image' src='images/fed_image.png' width="160" style="position: absolute; top: 0; left: 0;">
@@ -195,6 +196,61 @@
                 </p>
               </td>
             </tr>
+            
+
+            <tr>
+              <td style="padding:20px;width:25%;vertical-align:middle">
+                <div class="one" onmouseover="activateGif()" onmouseout="resetGif()">
+                  <div class="two" id='gif_container' style="position: relative;">
+                    <img id='animated_gif' src='images/med.gif' width="160" style="display: none;">
+                    <img id='static_image' src='images/med_0.gif' width="160" style="position: absolute; top: 0; left: 0;">
+                  </div>
+                </div>
+                <script type="text/javascript">
+                  var gifElement = document.getElementById('animated_gif');
+                  var staticImageElement = document.getElementById('static_image');
+                  var gifDuration = 5000; // Assuming the GIF duration is 5 seconds. Adjust this value.
+            
+                  function activateGif() {
+                    gifElement.style.display = "block";
+                    staticImageElement.style.display = "none";
+                    
+                    setTimeout(function() {
+                      gifElement.style.display = "none";
+                      staticImageElement.style.display = "block";
+                    }, gifDuration);
+                  }
+            
+                  function resetGif() {
+                    gifElement.style.display = "none";
+                    staticImageElement.style.display = "block";
+                  }
+                  resetGif();
+                </script>
+              </td>
+              <td style="padding:20px;width:75%;vertical-align:middle">
+                <a href="https://arxiv.org/abs/2310.15165">
+                  <span class="papertitle">Handling Data Heterogeneity via Architectural Design for Federated Visual Recognition
+            </span>
+                </a>
+                <br>
+                  <strong>Sara Pieri</strong>,
+                  <a href="">Jose Renato Restom</a>,
+                  <a href="https://mbzuai.ac.ae/study/faculty/samuel-horvath/">Samuel Horvath</a>,
+                  <a href="https://mbzuai.ac.ae/study/faculty/hisham-cholakkal/">Hisham Cholakkal</a>
+                <br>
+                <em>NeurIPS<em>, 2023
+                <br>
+                <!-- <a href="https://arxiv.org/abs/2310.15165">arXiv</a> -->
+                <!-- / -->
+                <a href="https://github.com/sarapieri/fed_het.git">code</a>
+                <p></p>
+                <p>
+                An experimental study on how to achieve better performance in federated tasks using architectural design. 
+                </p>
+              </td>
+            </tr>
+            
             
 
             <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
