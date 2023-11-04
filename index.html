@@ -92,8 +92,8 @@
                 </a>
                 <br>
                   <strong>Sara Pieri</strong>,
-                  <a href="https://mbzuai.ac.ae/study/faculty/hisham-cholakkal/">Hisham Cholakkal</a>, 
-                  <a href="https://mbzuai.ac.ae/study/faculty/fahad-khan/">Fahad Khan</a>
+                  <a href="https://mbzuai.ac.ae/study/faculty/fahad-khan/">Fahad Khan</a>,
+                  <a href="https://mbzuai.ac.ae/study/faculty/hisham-cholakkal/">Hisham Cholakkal</a>
                 <br>
                 <!-- <em>NeurIPS<em>, 2023
                 <br> -->
@@ -157,6 +157,59 @@
                 <p></p>
                 <p>
                 An experimental study on how to achieve better performance in federated tasks using architectural design. 
+                </p>
+              </td>
+            </tr>
+
+            <tr>
+              <td style="padding:20px;width:25%;vertical-align:middle">
+                <div class="one" onmouseover="activateGif()" onmouseout="resetGif()">
+                  <div class="two" id='gif_container' style="position: relative;">
+                    <img id='animated_gif' src='images/cell_new.gif' width="160" style="display: none;">
+                    <img id='static_image' src='images/med_0.gif' width="160" style="position: absolute; top: 0; left: 0;">
+                  </div>
+                </div>
+                <script type="text/javascript">
+                  var gifElement = document.getElementById('animated_gif');
+                  var staticImageElement = document.getElementById('static_image');
+                  var gifDuration = 5000; // Assuming the GIF duration is 5 seconds. Adjust this value.
+            
+                  function activateGif() {
+                    gifElement.style.display = "block";
+                    staticImageElement.style.display = "none";
+                    
+                    setTimeout(function() {
+                      gifElement.style.display = "none";
+                      staticImageElement.style.display = "block";
+                    }, gifDuration);
+                  }
+            
+                  function resetGif() {
+                    gifElement.style.display = "none";
+                    staticImageElement.style.display = "block";
+                  }
+                  resetGif();
+                </script>
+              </td>
+              <td style="padding:20px;width:75%;vertical-align:middle">
+                  <!-- Add achive -->
+                <a href=""> 
+                  <span class="papertitle">CellSDF: Exploring 2D Cell Shapes with Signed Distance Functions
+            </span>
+                </a>
+                <br>
+                  <strong>Sara Pieri</strong>,
+                  <a href="https://www.researchgate.net/profile/Boulbaba-Ben-Amor">Boulbaba Ben Amor</a>,
+                  <a href="https://mbzuai.ac.ae/study/faculty/hisham-cholakkal/">Hisham Cholakkal</a>
+                <br>
+                <!-- <em>NeurIPS<em>, 2023
+                <br> -->
+                <!-- <a href="https://arxiv.org/abs/2310.15165">arXiv</a> -->
+                <!-- / -->
+                <a href="">In progress...</a>
+                <p></p>
+                <p>
+                Learn cell shape contours through the reconstruction of the cells' signed distance function (SDF) and associate them with latent codes to analyze cell morphology in low-dimensional space. 
                 </p>
               </td>
             </tr>
