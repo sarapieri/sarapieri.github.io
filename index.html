@@ -225,6 +225,53 @@
             </tr>
           </tbody></table>
 
+          <tr>
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one" onmouseover="activateGif3()" onmouseout="resetGif3()">
+                <div class="two" id='gif_container3' style="position: relative;">
+                  <img id='animated_gif3' src='images/HF_gif.gif' width="160" style="display: none;">
+                  <img id='static_image3' src='images/HF_gif0.gif' width="160" style="position: absolute; top: 0; left: 0;">
+                </div>
+              </div>
+              <script type="text/javascript">
+                var gifElement3 = document.getElementById('animated_gif3');
+                var staticImageElement3 = document.getElementById('static_image3');
+                var gifDuration3 = 5000; // Assuming the GIF duration is 5 seconds. Adjust this value.
+          
+                function activateGif3() {
+                  gifElement3.style.display = "block";
+                  staticImageElement3.style.display = "none";
+          
+                  setTimeout(function() {
+                    gifElement3.style.display = "none";
+                    staticImageElement3.style.display = "block";
+                  }, gifDuration3);
+                }
+          
+                function resetGif3() {
+                  gifElement3.style.display = "none";
+                  staticImageElement3.style.display = "block";
+                }
+                resetGif3();
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <!-- Add another content -->
+              <a href=""> 
+                <span class="papertitle">Build Your First Hugging Face Space with Gradio</span>
+              </a>
+              <br>
+              <strong>Sara Pieri</strong>
+              <br>
+              <a href="https://medium.com/@sa.pieri.98/build-your-first-hugging-face-space-with-gradio-a-beginners-guide-14bc42d66887">Article</a>
+              <p></p>
+              <p>
+                A tutorial on how to present your HF model in Spaces with Gradio. 
+              </p>
+            </td>
+          </tr>
+          
+
 
             
 <!-- 
