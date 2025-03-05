@@ -64,35 +64,36 @@
         <tbody>
 
               <tr>
-                <td style="padding:20px;width:25%;vertical-align:middle">
-                  <div class="one" onmouseover="activateGif()" onmouseout="resetGif()">
-                    <div class="two" id='gif_container' style="position: relative;">
-                      <img id='animated_gif' src='images/sara.mp4' width="160" style="display: none;">
-                      <img id='static_image' src='images/sara.png' width="160" style="position: absolute; top: 0; left: 0;">
-                    </div>
-                  </div>
-                  <script type="text/javascript">
-                    var gifElement = document.getElementById('animated_gif');
-                    var staticImageElement = document.getElementById('static_image');
-                    var gifDuration = 5000; // Assuming the GIF duration is 5 seconds. Adjust this value.
-              
-                    function activateGif() {
-                      gifElement.style.display = "block";
-                      staticImageElement.style.display = "none";
-                      
-                      setTimeout(function() {
-                        gifElement.style.display = "none";
-                        staticImageElement.style.display = "block";
-                      }, gifDuration);
-                    }
-              
-                    function resetGif() {
-                      gifElement.style.display = "none";
-                      staticImageElement.style.display = "block";
-                    }
-                    resetGif();
-                  </script>
-                </td>
+                      <td style="padding:20px;width:25%;vertical-align:middle">
+                        <div class="one" onmouseover="difsurvey_start()" onmouseout="difsurvey_stop()">
+                          <div class="two" id='video_container' style="position: relative;">
+                            <video id="med2_video" width=100% height=100% muted>
+                              <source src="images/sara.mp4" type="video/mp4">
+                              Your browser does not support the video tag.
+                            </video>
+                            <img id='med2_image' src='images/sara.png' width="160" style="position: absolute; top: 0; left: 0;">
+                          </div>
+                        </div>
+                        <script type="text/javascript">
+                          var videoElement = document.getElementById('med2_video');
+                          var imageElement = document.getElementById('med2_image');
+                    
+                          videoElement.addEventListener('ended', function() {
+                            imageElement.style.opacity = "1";
+                          });
+                    
+                          function difsurvey_start() {
+                            videoElement.play();
+                            imageElement.style.opacity = "0";
+                          }
+                    
+                          function difsurvey_stop() {
+                            videoElement.pause();
+                            imageElement.style.opacity = "1";
+                          }
+                          difsurvey_stop();
+                        </script>
+                      </td>      
                 <td style="padding:20px;width:75%;vertical-align:middle">
                     <!-- Add achive -->
                     <a href="https://arxiv.org/pdf/2402.13253"> 
