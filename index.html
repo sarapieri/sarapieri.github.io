@@ -62,7 +62,7 @@
     </table>
       <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
         <tbody>
-              
+
               <tr>
                 <td style="padding:20px;width:25%;vertical-align:middle">
                   <div class="one" onmouseover="activateGif()" onmouseout="resetGif()">
@@ -95,30 +95,89 @@
                 </td>
                 <td style="padding:20px;width:75%;vertical-align:middle">
                     <!-- Add achive -->
-                  <a href="https://arxiv.org/pdf/2402.13253"> 
-                    <span class="papertitle">BiMediX: Bilingual Medical Mixture of Experts LLM
-              </span>
-                  </a>
-                  <br>
-                    <strong>Sara Pieri</strong>,
-                    <a href="https://scholar.google.com/citations?user=LJWxVpUAAAAJ&hl=en&oi=ao">Sahal Shaji Mullappilly</a>,
-                    <a href="https://scholar.google.com/citations?user=zvaeYnUAAAAJ&hl=en&oi=ao">Fahad Shahbaz Khan</a>,
-                    <a href="https://scholar.google.com/citations?hl=en&user=_KlvMVoAAAAJ">Rao Muhammad Anwer</a>,
-                    <a href="https://scholar.google.com/citations?user=M59O9lkAAAAJ&hl=en&oi=ao">Salman Khan</a>,
-                    <a href="https://scholar.google.com/citations?user=wjBD1dkAAAAJ&hl=en&oi=ao">Timothy Baldwin</a>,
-                    <a href="https://scholar.google.com/citations?user=bZ3YBRcAAAAJ&hl=en&oi=ao">Hisham Cholakkal</a>
-                  <br>
-                  <em>EMNLP<em>, 2024
-                  <br>
-                  <a href="https://arxiv.org/abs/2402.13253">arXiv</a>
-                  /
-                  <a href="https://github.com/mbzuai-oryx/BiMediX">code</a>
-                  /
-                  <a href="https://huggingface.co/BiMediX">hf</a>
-                  <p></p>
-                  <p>
-                  Advancing LLMs for medical question-answering and dialogue applications.
-                  </p>
+                    <a href="https://arxiv.org/pdf/2402.13253"> 
+                      <span class="papertitle">BiMediX: Bilingual Medical Mixture of Experts LLM
+                      </span>
+                    </a>
+                    <br>
+                      <strong>Sara Pieri</strong>,
+                      <a href="https://scholar.google.com/citations?user=LJWxVpUAAAAJ&hl=en&oi=ao">Sahal Shaji Mullappilly</a>,
+                      <a href="https://scholar.google.com/citations?user=zvaeYnUAAAAJ&hl=en&oi=ao">Fahad Shahbaz Khan</a>,
+                      <a href="https://scholar.google.com/citations?hl=en&user=_KlvMVoAAAAJ">Rao Muhammad Anwer</a>,
+                      <a href="https://scholar.google.com/citations?user=M59O9lkAAAAJ&hl=en&oi=ao">Salman Khan</a>,
+                      <a href="https://scholar.google.com/citations?user=wjBD1dkAAAAJ&hl=en&oi=ao">Timothy Baldwin</a>,
+                      <a href="https://scholar.google.com/citations?user=bZ3YBRcAAAAJ&hl=en&oi=ao">Hisham Cholakkal</a>
+                    <br>
+                    <em>EMNLP<em>, 2024
+                    <br>
+                    <a href="https://arxiv.org/abs/2402.13253">arXiv</a>
+                    /
+                    <a href="https://github.com/mbzuai-oryx/BiMediX">code</a>
+                    /
+                    <a href="https://huggingface.co/BiMediX">hf</a>
+                    <p></p>
+                    <p>
+                    Advancing LLMs for medical question-answering and dialogue applications.
+                    </p>
+                </td>
+              </tr>
+
+              <tr>
+                <td style="padding:20px;width:25%;vertical-align:middle">
+                  <div class="one" onmouseover="activateGif()" onmouseout="resetGif()">
+                    <div class="two" id='gif_container' style="position: relative;">
+                      <img id='animated_gif' src='images/med.gif' width="160" style="display: none;">
+                      <img id='static_image' src='images/med_0.gif' width="160" style="position: absolute; top: 0; left: 0;">
+                    </div>
+                  </div>
+                  <script type="text/javascript">
+                    var gifElement = document.getElementById('animated_gif');
+                    var staticImageElement = document.getElementById('static_image');
+                    var gifDuration = 5000; // Assuming the GIF duration is 5 seconds. Adjust this value.
+              
+                    function activateGif() {
+                      gifElement.style.display = "block";
+                      staticImageElement.style.display = "none";
+                      
+                      setTimeout(function() {
+                        gifElement.style.display = "none";
+                        staticImageElement.style.display = "block";
+                      }, gifDuration);
+                    }
+              
+                    function resetGif() {
+                      gifElement.style.display = "none";
+                      staticImageElement.style.display = "block";
+                    }
+                    resetGif();
+                  </script>
+                </td>
+                <td style="padding:20px;width:75%;vertical-align:middle">
+                    <!-- Add achive -->
+                    <a href="https://arxiv.org/pdf/2402.13253"> 
+                      <span class="papertitle">BiMediX: Bilingual Medical Mixture of Experts LLM
+                      </span>
+                    </a>
+                    <br>
+                      <strong>Sara Pieri</strong>,
+                      <a href="https://scholar.google.com/citations?user=LJWxVpUAAAAJ&hl=en&oi=ao">Sahal Shaji Mullappilly</a>,
+                      <a href="https://scholar.google.com/citations?user=zvaeYnUAAAAJ&hl=en&oi=ao">Fahad Shahbaz Khan</a>,
+                      <a href="https://scholar.google.com/citations?hl=en&user=_KlvMVoAAAAJ">Rao Muhammad Anwer</a>,
+                      <a href="https://scholar.google.com/citations?user=M59O9lkAAAAJ&hl=en&oi=ao">Salman Khan</a>,
+                      <a href="https://scholar.google.com/citations?user=wjBD1dkAAAAJ&hl=en&oi=ao">Timothy Baldwin</a>,
+                      <a href="https://scholar.google.com/citations?user=bZ3YBRcAAAAJ&hl=en&oi=ao">Hisham Cholakkal</a>
+                    <br>
+                    <em>EMNLP<em>, 2024
+                    <br>
+                    <a href="https://arxiv.org/abs/2402.13253">arXiv</a>
+                    /
+                    <a href="https://github.com/mbzuai-oryx/BiMediX">code</a>
+                    /
+                    <a href="https://huggingface.co/BiMediX">hf</a>
+                    <p></p>
+                    <p>
+                    Advancing LLMs for medical question-answering and dialogue applications.
+                    </p>
                 </td>
               </tr>
 
@@ -156,13 +215,13 @@
                 <td style="padding:20px;width:75%;vertical-align:middle">
                   <a href="https://arxiv.org/abs/2310.15165">
                     <span class="papertitle">Handling Data Heterogeneity via Architectural Design for Federated Visual Recognition
-              </span>
+                    </span>
                   </a>
                   <br>
-                    <strong>Sara Pieri</strong>,
-                    <a href="">Jose Renato Restom</a>,
-                    <a href="https://mbzuai.ac.ae/study/faculty/samuel-horvath/">Samuel Horvath</a>,
-                    <a href="https://scholar.google.com/citations?user=bZ3YBRcAAAAJ&hl=en&oi=ao">Hisham Cholakkal</a>
+                  <strong>Sara Pieri</strong>,
+                  <a href="">Jose Renato Restom</a>,
+                  <a href="https://mbzuai.ac.ae/study/faculty/samuel-horvath/">Samuel Horvath</a>,
+                  <a href="https://scholar.google.com/citations?user=bZ3YBRcAAAAJ&hl=en&oi=ao">Hisham Cholakkal</a>
                   <br>
                   <em>NeurIPS<em>, 2023
                   <br>
@@ -210,12 +269,12 @@
                     <!-- Add achive -->
                   <a href="https://www.g42.ai/"> 
                     <span class="papertitle">G42: Research and Development Intern
-              </span>
+                    </span>
                   </a>
                   <br>
-                    <strong>Sara Pieri</strong>,
-                    <a href="https://www.researchgate.net/profile/Boulbaba-Ben-Amor">Boulbaba Ben Amor</a>,
-                    <a href="https://scholar.google.com/citations?user=bZ3YBRcAAAAJ&hl=en&oi=ao">Hisham Cholakkal</a>
+                  <strong>Sara Pieri</strong>,
+                  <a href="https://www.researchgate.net/profile/Boulbaba-Ben-Amor">Boulbaba Ben Amor</a>,
+                  <a href="https://scholar.google.com/citations?user=bZ3YBRcAAAAJ&hl=en&oi=ao">Hisham Cholakkal</a>
                   <br>
                   <!-- <em>NeurIPS<em>, 2023
                   <br> -->
@@ -228,7 +287,7 @@
                   </p>
                 </td>
               </tr>
-            </tbody>
+        </tbody>
       </table>
 
             <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
