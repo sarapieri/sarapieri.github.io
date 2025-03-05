@@ -75,21 +75,21 @@
                           </div>
                         </div>
                         <script type="text/javascript">
-                          var videoElement = document.getElementById('med2_video');
-                          var imageElement = document.getElementById('med2_image');
+                          var videoElement2 = document.getElementById('med2_video');
+                          var imageElement2 = document.getElementById('med2_image');
                     
-                          videoElement.addEventListener('ended', function() {
-                            imageElement.style.opacity = "1";
+                          videoElement2.addEventListener('ended', function() {
+                            imageElement2.style.opacity = "1";
                           });
                     
                           function difsurvey_start() {
-                            videoElement.play();
-                            imageElement.style.opacity = "0";
+                            videoElement2.play();
+                            imageElement2.style.opacity = "0";
                           }
                     
                           function difsurvey_stop() {
-                            videoElement.pause();
-                            imageElement.style.opacity = "1";
+                            videoElement2.pause();
+                            imageElement2.style.opacity = "1";
                           }
                           difsurvey_stop();
                         </script>
